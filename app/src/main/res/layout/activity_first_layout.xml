@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/first_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="202dp"
+                android:layout_height="202dp"
+                android:background="@drawable/white"/>
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/ic_disc"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:src="@mipmap/ic_head"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请授予MusicBall相关权限"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@drawable/card_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="悬浮球权限"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <Button
+                        android:id="@+id/first_button_ball"
+                        android:layout_marginEnd="8dp"
+                        android:text="未授予"
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_background"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/card_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通知使用权"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <Button
+                        android:id="@+id/first_button_notification"
+                        android:layout_marginEnd="8dp"
+                        android:text="未授予"
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_background"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/card_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="允许后台启动"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <Button
+                        android:id="@+id/first_button_live"
+                        android:layout_marginEnd="8dp"
+                        android:text="跳转"
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_background"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/first_button_finish"
+                android:text="完成"
+                android:textColor="#fff"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background_big"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
